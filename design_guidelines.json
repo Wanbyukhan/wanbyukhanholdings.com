@@ -1,0 +1,151 @@
+{
+  "brand_identity": {
+    "name": "Wanbyukhan Holdings, LLC",
+    "tagline": "Strategic Investments. Long-Term Vision.",
+    "description": "An Internet Businesses Holding Company building the digital infrastructure of tomorrow.",
+    "archetype": "The Steward",
+    "emotional_tone": "Legitimate, Trustworthy, Calm, Reserved, Minimalist Luxury",
+    "target_audience": "Apple Developer Program reviewers, corporate stakeholders, potential partners",
+    "theme_mode": "light"
+  },
+  "typography": {
+    "font_family": {
+      "heading": "Playfair Display, serif",
+      "body": "Manrope, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-medium tracking-tight leading-[1.1]",
+      "h2": "text-4xl md:text-5xl font-medium tracking-tight leading-tight",
+      "h3": "text-2xl md:text-3xl font-medium tracking-normal",
+      "body_lg": "text-lg md:text-xl font-normal leading-relaxed text-muted-foreground",
+      "body": "text-base font-normal leading-relaxed text-muted-foreground",
+      "caption": "text-sm font-medium tracking-wide uppercase text-muted-foreground/80"
+    },
+    "usage_rules": {
+      "headings": "Use 'Playfair Display' for all H1-H3. Keep weights moderate (400-500). Avoid bold weights for a refined look.",
+      "body": "Use 'Manrope' for all paragraphs and UI elements. Ensure high readability with relaxed line-height.",
+      "buttons": "Use 'Manrope' Medium or SemiBold. Uppercase tracking-widest for refined buttons.",
+      "color_pairing": "Headings in Dark Charcoal (#1A1A1A), Body in Muted Charcoal (#4A4A4A)."
+    }
+  },
+  "colors": {
+    "palette": {
+      "background": "#FAF8F5",
+      "foreground": "#1A1A1A",
+      "card": "#FFFFFF",
+      "card_foreground": "#1A1A1A",
+      "popover": "#FFFFFF",
+      "popover_foreground": "#1A1A1A",
+      "primary": "#8DA399",
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#E8E6E1",
+      "secondary_foreground": "#1A1A1A",
+      "muted": "#F0EFE9",
+      "muted_foreground": "#595959",
+      "accent": "#F2F0EB",
+      "accent_foreground": "#1A1A1A",
+      "destructive": "#994a4a",
+      "destructive_foreground": "#FAFAFA",
+      "border": "#DddBd5",
+      "input": "#E6E4DE",
+      "ring": "#8DA399"
+    },
+    "semantic_usage": {
+      "page_bg": "Use bg-[#FAF8F5] for the main page background.",
+      "text_main": "Use text-[#1A1A1A] for primary headings.",
+      "text_muted": "Use text-[#595959] for body text and secondary information.",
+      "accent_elements": "Use Sage Green (#8DA399) for primary buttons and active states.",
+      "borders": "Use subtle warm grey borders (#DddBd5) for separation."
+    }
+  },
+  "layout_grid": {
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "spacing": {
+      "section_y": "py-24 md:py-32",
+      "element_gap": "gap-8",
+      "component_gap": "gap-4"
+    },
+    "grid_system": "Use CSS Grid with 'gap-8' or 'gap-12' for layout separation. Avoid dense packing."
+  },
+  "visual_enhancers": {
+    "texture": "Add a subtle noise texture overlay (opacity 0.03) to the background to prevent 'digital flatness'.",
+    "shadows": "Use soft, warm shadows: 'shadow-[0_4px_20px_-2px_rgba(26,26,26,0.05)]'. Avoid harsh black shadows.",
+    "borders": "Use 1px solid borders with low opacity (border-primary/10) for cards to give structure without weight.",
+    "glassmorphism": "Use 'backdrop-blur-md bg-white/50' for sticky headers or floating elements.",
+    "radius": "rounded-none for a strict corporate look, or rounded-sm (2px) for slight softening. Do NOT use large rounded corners."
+  },
+  "component_library": {
+    "buttons": {
+      "primary": "bg-[#8DA399] text-white hover:bg-[#7A8F85] rounded-sm px-8 py-3 transition-all duration-300 font-medium tracking-wide shadow-sm",
+      "outline": "border border-[#1A1A1A] text-[#1A1A1A] hover:bg-[#1A1A1A] hover:text-white rounded-sm px-8 py-3 transition-all duration-300",
+      "link": "text-[#1A1A1A] underline decoration-1 underline-offset-4 hover:text-[#8DA399] transition-colors"
+    },
+    "cards": {
+      "style": "bg-white border border-[#E6E4DE] p-8 shadow-sm hover:shadow-md transition-shadow duration-300 rounded-sm"
+    },
+    "inputs": {
+      "style": "bg-transparent border-b border-[#DddBd5] focus:border-[#8DA399] rounded-none px-0 py-3 transition-colors outline-none text-[#1A1A1A] placeholder:text-muted-foreground/60"
+    }
+  },
+  "images": {
+    "hero_image": {
+      "url": "https://images.unsplash.com/photo-1765371513765-d2b624850162?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwd2FybSUyMG9mZmljZSUyMGRlc2slMjBwbGFudCUyMG1hZ2F6aW5lJTIwbWluaW1hbGlzdHxlbnwwfHx8fDE3NzE4OTYwODR8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Minimalist warm office desk detail",
+      "style": "Object-cover, warm tone, non-distracting"
+    },
+    "focus_areas": [
+      {
+        "title": "Technology & Software",
+        "url": "https://images.unsplash.com/photo-1758739660243-9e0bd00b71fc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzB8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMG1pbmltYWxpc3QlMjB0ZWNobm9sb2d5JTIwZ2VvbWV0cmljJTIwYmVpZ2V8ZW58MHx8fHwxNzcxODk2MDg0fDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Abstract geometric structure representing technology"
+      },
+      {
+        "title": "Digital Platforms",
+        "url": "https://images.unsplash.com/photo-1713518814139-e926e75c46f8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGJlaWdlJTIwYXJjaGl0ZWN0dXJlJTIwbWluaW1hbGlzdCUyMGRldGFpbHxlbnwwfHx8fDE3NzE4OTYwODl8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Minimalist architecture detail for platforms"
+      },
+      {
+        "title": "Strategic Private Investments",
+        "url": "https://images.unsplash.com/photo-1716346061557-48fff095bf88?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGJlaWdlJTIwYXJjaGl0ZWN0dXJlJTIwbWluaW1hbGlzdCUyMGRldGFpbHxlbnwwfHx8fDE3NzE4OTYwODl8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Clock on wall representing long-term vision"
+      }
+    ]
+  },
+  "pages_structure": {
+    "home": {
+      "sections": [
+        "Hero: Left aligned text (H1, Subtitle, CTA), Right aligned large image. 50/50 split.",
+        "About: Centered text block. 'Mission Statement'. max-w-3xl mx-auto.",
+        "Focus Areas: 3-column grid. Each card has Icon/Image + Title + Short Desc.",
+        "Contact: Two columns. Left: Contact Info (Email, Address). Right: Visual Form (Name, Email, Message, Submit)."
+      ]
+    },
+    "footer": {
+      "content": "Copyright text, Privacy Policy Link, Terms of Use Link. Simple, minimalist, top border."
+    },
+    "privacy": {
+      "structure": "Simple text document layout. H1 Title, Last Updated Date, Prose content."
+    },
+    "terms": {
+      "structure": "Simple text document layout. H1 Title, Last Updated Date, Prose content."
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install 'lucide-react' for icons.",
+    "Use 'Playfair Display' from Google Fonts via 'next/font' or standard CSS import.",
+    "Use 'Manrope' from Google Fonts.",
+    "Update 'tailwind.config.js' with the custom colors provided in the 'colors' section.",
+    "Ensure the 'Contact' form is VISUAL ONLY. No backend integration needed.",
+    "Create the 'Privacy Policy' and 'Terms of Use' pages with placeholder legal text.",
+    "Use a text-based favicon 'W' using a simple SVG or canvas generation.",
+    "Implement smooth scrolling.",
+    "Ensure mobile responsiveness: Stack the Hero section (Image top or bottom depending on flow), stack the Focus Areas to 1 col."
+  ],
+  "UNIVERSAL_GUIDELINES": [
+    "Do NOT use gradients. Stick to solid colors.",
+    "Do NOT use standard 'Shadcn' card styles. Use the custom 'cards.style' defined above.",
+    "Ensure ample whitespace. Use 'py-20' or 'py-24' for section padding.",
+    "Typography is the hero. Ensure proper line-height and letter-spacing."
+  ]
+}
