@@ -1,34 +1,81 @@
-.App-logo {
-    height: 40vmin;
+/* Custom styles for Wanbyukhan Holdings */
+
+/* Subtle noise texture overlay */
+.noise-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     pointer-events: none;
+    z-index: 9999;
+    opacity: 0.02;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+/* Custom button hover effect */
+.btn-primary {
+    @apply bg-[#8DA399] text-white px-8 py-3 font-medium tracking-wide transition-all duration-300;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.btn-primary:hover {
+    @apply bg-[#7A8F85] shadow-lg;
+    transform: translateY(-1px);
 }
 
-.App-link {
-    color: #61dafb;
+/* Custom input styles */
+.input-underline {
+    @apply bg-transparent border-0 border-b border-[#DddBd5] rounded-none px-0 py-3 transition-colors outline-none text-[#1A1A1A] w-full;
 }
 
-@keyframes App-logo-spin {
+.input-underline::placeholder {
+    @apply text-[#595959]/60;
+}
+
+.input-underline:focus {
+    @apply border-[#8DA399];
+}
+
+/* Card hover effect */
+.card-hover {
+    @apply bg-white border border-[#E6E4DE] p-8 transition-shadow duration-300;
+}
+
+.card-hover:hover {
+    box-shadow: 0 4px 20px -2px rgba(26, 26, 26, 0.08);
+}
+
+/* Hero image styling */
+.hero-image {
+    @apply object-cover w-full h-full;
+}
+
+/* Section transitions */
+.section-fade {
+    animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
     from {
-        transform: rotate(0deg);
+        opacity: 0;
+        transform: translateY(20px);
     }
     to {
-        transform: rotate(360deg);
+        opacity: 1;
+        transform: translateY(0);
     }
+}
+
+/* Link hover effect */
+.link-hover {
+    @apply text-[#1A1A1A] underline decoration-1 underline-offset-4 transition-colors duration-200;
+}
+
+.link-hover:hover {
+    @apply text-[#8DA399];
+}
+
+/* Footer styling */
+.footer-divider {
+    @apply border-t border-[#E6E4DE];
 }
