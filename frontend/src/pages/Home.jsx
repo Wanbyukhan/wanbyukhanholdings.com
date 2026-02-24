@@ -1,27 +1,7 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Mail, MapPin, ArrowRight, Monitor, Globe, TrendingUp } from "lucide-react";
 
 const Home = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: ""
-  });
-  const [formSubmitted, setFormSubmitted] = useState(false);
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setFormSubmitted(true);
-    setTimeout(() => setFormSubmitted(false), 3000);
-    setFormData({ name: "", email: "", message: "" });
-  };
-
   const scrollToContact = () => {
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -48,8 +28,8 @@ const Home = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-24 md:pt-32" data-testid="hero-section">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24">
+      <section className="pt-20 md:pt-24" data-testid="hero-section">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 py-8 md:py-16">
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             <div className="order-2 md:order-1">
               <h1 className="text-5xl md:text-7xl font-medium tracking-tight leading-[1.1] text-[#1A1A1A] mb-6" data-testid="hero-title">
@@ -76,8 +56,8 @@ const Home = () => {
             <div className="order-1 md:order-2">
               <div className="aspect-[4/5] overflow-hidden rounded-sm">
                 <img 
-                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80" 
-                  alt="Professional workspace with warm tones"
+                  src="https://images.pexels.com/photos/346731/pexels-photo-346731.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                  alt="Minimalist desk workspace from above with papers and notebook"
                   className="hero-image"
                   data-testid="hero-image"
                 />
@@ -163,114 +143,39 @@ const Home = () => {
       {/* Contact Section */}
       <section className="py-24 md:py-32 bg-[#FAF8F5]" id="contact" data-testid="contact-section">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="grid md:grid-cols-2 gap-16">
-            {/* Contact Info */}
-            <div>
-              <span className="text-sm font-medium tracking-widest uppercase text-[#8DA399] mb-4 block" data-testid="contact-label">
-                Get In Touch
-              </span>
-              <h2 className="text-4xl md:text-5xl font-medium tracking-tight leading-tight text-[#1A1A1A] mb-8" data-testid="contact-headline">
-                Contact
-              </h2>
-              <p className="text-lg text-[#595959] leading-relaxed mb-10">
-                We welcome inquiries from potential partners, investors, and collaborators. Please reach out to discuss how we might work together.
-              </p>
-              
-              <div className="space-y-6">
-                <div className="flex items-start gap-4" data-testid="contact-email">
-                  <div className="w-10 h-10 bg-white rounded-sm flex items-center justify-center border border-[#E6E4DE]">
-                    <Mail className="w-5 h-5 text-[#8DA399]" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-[#595959] mb-1">Email</p>
-                    <a href="mailto:contact@wanbyukhanholdings.com" className="text-[#1A1A1A] hover:text-[#8DA399] transition-colors">
-                      contact@wanbyukhanholdings.com
-                    </a>
-                  </div>
+          <div className="max-w-2xl">
+            <span className="text-sm font-medium tracking-widest uppercase text-[#8DA399] mb-4 block" data-testid="contact-label">
+              Get In Touch
+            </span>
+            <h2 className="text-4xl md:text-5xl font-medium tracking-tight leading-tight text-[#1A1A1A] mb-8" data-testid="contact-headline">
+              Contact
+            </h2>
+            <p className="text-lg text-[#595959] leading-relaxed mb-10">
+              We welcome inquiries from potential partners, investors, and collaborators. Please reach out to discuss how we might work together.
+            </p>
+            
+            <div className="space-y-6">
+              <div className="flex items-start gap-4" data-testid="contact-email">
+                <div className="w-10 h-10 bg-white rounded-sm flex items-center justify-center border border-[#E6E4DE]">
+                  <Mail className="w-5 h-5 text-[#8DA399]" />
                 </div>
-                
-                <div className="flex items-start gap-4" data-testid="contact-location">
-                  <div className="w-10 h-10 bg-white rounded-sm flex items-center justify-center border border-[#E6E4DE]">
-                    <MapPin className="w-5 h-5 text-[#8DA399]" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-[#595959] mb-1">Location</p>
-                    <p className="text-[#1A1A1A]">United States</p>
-                  </div>
+                <div>
+                  <p className="text-sm text-[#595959] mb-1">Email</p>
+                  <a href="mailto:yun@wanbyukhanholdings.com" className="text-[#1A1A1A] hover:text-[#8DA399] transition-colors">
+                    yun@wanbyukhanholdings.com
+                  </a>
                 </div>
               </div>
-            </div>
-
-            {/* Contact Form (Visual Only) */}
-            <div className="bg-white p-8 md:p-10 rounded-sm border border-[#E6E4DE]" data-testid="contact-form-container">
-              <form onSubmit={handleSubmit}>
-                <div className="space-y-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-[#1A1A1A] mb-2">
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      placeholder="Your name"
-                      className="input-underline"
-                      data-testid="contact-input-name"
-                      required
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-[#1A1A1A] mb-2">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      placeholder="your@email.com"
-                      className="input-underline"
-                      data-testid="contact-input-email"
-                      required
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-[#1A1A1A] mb-2">
-                      Message
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      placeholder="How can we help you?"
-                      rows={4}
-                      className="input-underline resize-none"
-                      data-testid="contact-input-message"
-                      required
-                    />
-                  </div>
-                  
-                  <button
-                    type="submit"
-                    className="btn-primary rounded-sm w-full"
-                    data-testid="contact-submit-btn"
-                  >
-                    {formSubmitted ? "Message Sent" : "Send Message"}
-                  </button>
-                  
-                  {formSubmitted && (
-                    <p className="text-sm text-[#8DA399] text-center" data-testid="contact-success-msg">
-                      Thank you for your message. We will be in touch soon.
-                    </p>
-                  )}
+              
+              <div className="flex items-start gap-4" data-testid="contact-location">
+                <div className="w-10 h-10 bg-white rounded-sm flex items-center justify-center border border-[#E6E4DE]">
+                  <MapPin className="w-5 h-5 text-[#8DA399]" />
                 </div>
-              </form>
+                <div>
+                  <p className="text-sm text-[#595959] mb-1">Location</p>
+                  <p className="text-[#1A1A1A]">United States</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
