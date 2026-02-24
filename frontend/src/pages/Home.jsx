@@ -56,8 +56,8 @@ const Home = () => {
             <div className="order-1 md:order-2">
               <div className="aspect-[4/5] overflow-hidden rounded-sm">
                 <img 
-                  src="https://images.pexels.com/photos/8250837/pexels-photo-8250837.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                  alt="Flat lay of modern tech peripherals and stationery on wooden desk"
+                  src="https://images.unsplash.com/photo-1766411503626-0e2f5fb8ba0b?w=800&q=80" 
+                  alt="Open book, lamp and plant on wooden table with warm natural light"
                   className="hero-image"
                   data-testid="hero-image"
                 />
