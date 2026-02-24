@@ -28,8 +28,8 @@ const Home = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-20 md:pt-24" data-testid="hero-section">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 py-8 md:py-16">
+      <section className="pt-14" data-testid="hero-section">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 py-4 md:py-6">
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             <div className="order-2 md:order-1">
               <h1 className="text-5xl md:text-7xl font-medium tracking-tight leading-[1.1] text-[#1A1A1A] mb-6" data-testid="hero-title">
@@ -56,8 +56,8 @@ const Home = () => {
             <div className="order-1 md:order-2">
               <div className="aspect-[4/5] overflow-hidden rounded-sm">
                 <img 
-                  src="https://images.pexels.com/photos/346731/pexels-photo-346731.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                  alt="Minimalist desk workspace from above with papers and notebook"
+                  src="https://images.unsplash.com/photo-1451930734377-eb5b3ce18143?w=800&q=80" 
+                  alt="Wooden desk with magazine in warm natural sunlight"
                   className="hero-image"
                   data-testid="hero-image"
                 />
